@@ -14,14 +14,15 @@ App inspired by http://www.boxuk.com/blog/analyzing-the-design-of-websites blog 
 
 == Needs
 
-I'm not giving any guaranttee that it will work on any enviroment. Here are technologies used by me:
+I'm not giving any guarantee that it would work on any environment, cause I use mac. Here are technologies that I used:
 
   - rmagick (2.9.2) [RubyGem]
   - gchartrb (0.8)  [RubyGem]
   - webkit2png.py   [Python 2.5.1 (r251:54863, Feb  6 2009, 19:02:12)]
   - ruby 1.8.6      (2008-08-11 patchlevel 287) [universal-darwin9.0]
   - TextMate        [Version 1.5.8 (1498)]                             
-  - Mac OS X        [Leopard 10.5.7]
+  - Mac OS X        [Leopard 10.5.7]                                                                                  
+  - listening Radiohead "OK Computer" album and Kaise Chiefs "Ruby" single via Spotiy ;-) 
   
 == Author
   Rafał "RaVbaker" Piekarski 
@@ -30,3 +31,7 @@ I'm not giving any guaranttee that it will work on any enviroment. Here are tech
 
 == License
   MIT license
+  
+== ToDo
+
+ - Saving google charts as files locally.
