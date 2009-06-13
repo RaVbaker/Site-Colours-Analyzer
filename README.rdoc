@@ -22,7 +22,7 @@ I'm not giving any guarantee that it would work on any environment, cause I use 
   - ruby 1.8.6      (2008-08-11 patchlevel 287) [universal-darwin9.0]
   - TextMate        [Version 1.5.8 (1498)]                             
   - Mac OS X        [Leopard 10.5.7]                                                                                  
-  - listening Radiohead "OK Computer" album and Kaise Chiefs "Ruby" single via Spotiy ;-) 
+  - listening Radiohead "OK Computer" album and Kaiser Chiefs "Ruby" single via Spotiy ;-) 
   
 == Author
   Rafał "RaVbaker" Piekarski 
