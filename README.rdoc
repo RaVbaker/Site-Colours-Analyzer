@@ -1,0 +1,32 @@
+== SiteColoursAnalyzer v.0.1
+
+This small script allow you to make an interesting analyze of colours on selected website. The output is link to googleChartAPI image with specific analyze.
+
+== Example of use:
+
+  ruby ca.rb http://ravbaker.net 
+
+It takes 1-2 minutes and returns in console interface two links. First one is to image with background, and second is only about colours without site background.   
+
+== Inspiration
+
+App inspired by http://www.boxuk.com/blog/analyzing-the-design-of-websites blog post.
+
+== Needs
+
+I'm not giving any guaranttee that it will work on any enviroment. Here are technologies used by me:
+
+  - rmagick (2.9.2) [RubyGem]
+  - gchartrb (0.8)  [RubyGem]
+  - webkit2png.py   [Python 2.5.1 (r251:54863, Feb  6 2009, 19:02:12)]
+  - ruby 1.8.6      (2008-08-11 patchlevel 287) [universal-darwin9.0]
+  - TextMate        [Version 1.5.8 (1498)]                             
+  - Mac OS X        [Leopard 10.5.7]
+  
+== Author
+  Rafał "RaVbaker" Piekarski 
+  email: ravbaker@gmail.com
+  www: http://at.ravbaker.net
+
+== License
+  MIT license
