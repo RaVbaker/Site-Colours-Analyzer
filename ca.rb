@@ -1,10 +1,15 @@
 #!/usr/bin/env ruby
 
+# SiteColoursAnalyzer
+# Author: Rafal "RaVbaker" Piekarski
+# Version: 0.1
+# more on github: http://github.com/RaVbaker/Site-Colours-Analyzer/tree/master
+
+require 'rubygems'
+require 'google_chart'
 require 'image.rb'
 require 'pixel.rb'
 require 'digest/md5'
-require 'google_chart'                     
-
 
 class SiteColoursAnalyzer
 
@@ -68,13 +73,13 @@ class SiteColoursAnalyzer
 #p "wget -o '#{ImagesPath+hashed_screenshot_file}-#{output_filename}.png' '#{chart_url}'"
   #  system "wget -o '#{ImagesPath+hashed_screenshot_file}-#{output_filename}.png' '#{chart_url}'"
     chart_url
-  end
+  end     
   
+  def clean_up
+    system "rm #{hashed_screenshot_file}*"
+  end
 end
                
-
-
-
 if __FILE__ == $0
   
   analyze = SiteColoursAnalyzer.new(ARGV[0] || "http://ravbaker.net/")
@@ -85,5 +90,7 @@ if __FILE__ == $0
   puts
   puts "Link to chart without bg:"
   puts analyze.show_chart_url_and_save("without background (#{(analyze.get_pop_pixels.first[1][:popularity]*100).round} %) #{analyze.page_url}", analyze.get_pop_pixels[1..-1], "chart-without-bg", 30, "680x350")
-  puts
+  puts              
+  
+  analyze.clean_up
 end
